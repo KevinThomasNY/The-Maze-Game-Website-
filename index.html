@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>The Maze Game</title>
+	<link rel="shortcut icon" type="image/png" href="./resources/img/favicon.png">
+</head>
+
+<body>
+	<canvas id="c"></canvas>
+	<div class="hero">
+		<header>
+			<div class="title">
+				<h1>The Maze Game</h1>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="userguide.html">User Guide</a></li>
+					<li><a href="resource.html">References</a></li>
+				</ul>
+			</div>
+		</header>
+		<section class="welcome">
+			<div class="container">
+				<div class="left-col">
+					<div class="text">
+						<h1>Welcome To <br> The Maze Game</h1>
+						<p>The Maze Game is a Java application using object oriented programming. Its a fun game
+							containing randomly
+							generated
+							mazes.</p>
+						<div class="btn-con">
+							<a class="cta" href="./resources/Source code.zip">Click To Download
+								<img src="./resources/img/download.png" alt="download">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="right-col">
+					<div id="model" class="arrow">
+						<img src="./resources/img/color curved.png" alt="">
+						Click & rotate the zombie.
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section class="showcase">
+		<h2>3 LEVELS</h2>
+		<div class="show-container">
+			<img id="img1" src="./resources/img/lvl1.png" alt="Level 1">
+			<img id="img2" src="./resources/img/level 2.png" alt="Level 2">
+			<img id="img3" src="./resources/img/lvl3.png" alt="Level 3">
+			<div id="myModal" class="modal">
+
+				<!-- The Close Button -->
+				<span class="close">&times;</span>
+
+				<!-- Modal Content (The Image) -->
+				<img class="modal-content" id="img01">
+
+				<!-- Modal Caption (Image Text) -->
+				<div id="caption"></div>
+			</div>
+		</div>
+		<hr>
+	</section>
+	<section class="main">
+		<div class="container ch">
+			<div class="left-col">
+				<div class="text">
+					<h1 class="m-title">How It Works?</h1>
+					<p class="m-p">Each level contains a key. Only after the player finds the key may he enter the exit
+						area. Be
+						carefull as there are moving zombies ready to attack. Navigate throught the maze before the
+						timer runs out. The Maze Game allows the player to pick several different characters along with
+						multiple soundtracks..</p>
+					<div class="btn-con">
+						<a class="cta" href="./resources/Source code.zip">Click To Download
+							<img src="./resources/img/download.png" alt="download">
+						</a>
+					</div>
+					<div class="btn-con">
+						<a class="cta git" href="#">View Code
+							<img src="./resources/img/github.png" alt="download">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right-col">
+				<div class="ch-select">
+					<h2>Pick Your Character</h2>
+					<div class="btn-flex">
+						<button id="one" class="select" onclick="sl1()">Naruto Uzumaki</button>
+						<button id="two" class="select" onclick="sl2()">Iron Man</button>
+						<button id="three" class="select" onclick="sl3()">One Punch Man</button>
+						<button id="four" class="select" onclick="sl4()">Mouse</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="display">
+			<div class="container">
+				<img id="img-ch" src="./resources/img/Naruto Uzumaki 1.png" alt="">
+				<p id="text-ch">Naruto Uzumaki is the main character of The Maze Game. When you start at level 1 this is
+					who you play
+					as
+					by default. At any time you may change to another character.</p>
+			</div>
+		</div>
+		<footer>
+			<div class="copy">
+				<p>&copy; 2021 The Maze Game</p>
+			</div>
+		</footer>
+	</section>
+	<script src="./src/main.js" type="module"></script>
+	<script src="./src/app.js"></script>
+</body>
+
+</html>
